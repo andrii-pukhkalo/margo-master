@@ -50,17 +50,17 @@ class HomeController extends Controller
     /**
      * @Route("/email")
      */
-    public function email(\Swift_Mailer $mailer)
-    {
-
-
-        $message = (new \Swift_Message('Hello Email'))
-            ->setFrom('send@example.com')
-            ->setTo('puhkaloandrew@gmail.com')
-            ->setBody('hello');
-
-        $mailer->send($message);
-
-        return new Response('done');
-    }
+//    public function email(\Swift_Mailer $mailer)
+//    {
+//
+//
+//        $message = (new \Swift_Message('Hello Email'))
+//            ->setFrom('send@example.com')
+//            ->setTo('puhkaloandrew@gmail.com')
+//            ->setBody('hello');
+//
+//        $mailer->send($message);
+//
+//        return new Response('done');
+//    }
 }
